@@ -1,0 +1,280 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Use strict": {
+		"prefix": "str",
+		"body": [
+			"'use strict';"
+		],
+		"description": "Use strict in your Javascript files for beginners"
+	},
+	///// Requerir modulos en NodeJS
+	"Express": {
+		"prefix": "express",
+		"body": [
+			"const express = require('express');",
+			"\n",
+			"//////////////// APP //////////////////////",
+			"const app = express();",
+			"app.get('/', (request, response) => {",
+			"  response.send('Hello World!!');",
+			"});"
+		],
+		"description": "Require Express"
+	},
+	"HTTP": {
+		"prefix": "http",
+		"body": [
+			"const http = require('http');",
+			"const server = http.createServer( (request,response) => {",
+			"  if (request.url === '/') {",
+			"    response.statusCode = 200;",
+			"    response.setHeader('content-type', 'application/json');",
+			"    response.end(JSON.stringify({example : 42}));",
+			"  } else {",
+			"    response.statusCode = 404;",
+			"    response.setHeader('content-type', 'text/html');",
+			"    response.end('Page not found!');",
+			"    }",
+			"});",
+			"\n",
+			"server.listen(3000, 'localhost', () => {",
+			"  console.log('✔️ 🚀 >>>> Server working in localhost and PORT 3000  <<<< 🚀 ✔️')",
+			"});"
+		],
+		"description": "Require HTTP"
+	},
+	"Nodemon": {
+		"prefix": "nodemon",
+		"body": [
+			"const nodemon = require('nodemon');"
+		],
+		"description": "Require Nodemon"
+	},
+	"Morgan": {
+		"prefix": "morgan",
+		"body": [
+			"const morgan = require('morgan');"
+		],
+		"description": "Require Morgan"
+	},
+	"Cors": {
+		"prefix": "cors",
+		"body": [
+			"const cors = require('cors');"
+		],
+		"description": "Require Cors"
+	},
+	"Chalk": {
+		"prefix": "Chalk",
+		"body": [
+			"const chalk = require('chalk');"
+		],
+		"description": "Require Chalk"
+	},
+	"Path": {
+		"prefix": "path",
+		"body": [
+			"const path = require('path');"
+		],
+		"description": "Require path"
+	},
+	"Minimist": {
+		"prefix": "minimist",
+		"body": [
+			"const minimist = require('minimist')(process.argv.slice(2));"
+		],
+		"description": "Require Minimist"
+	},
+	"Dotenv": {
+		"prefix": "dotenv",
+		"body": [
+			"require('dotenv').config();"
+		],
+		"description": "Require Dotenv"
+	},
+	"Mysql2": {
+		"prefix": "mysql2",
+		"body": [
+			"const mysql = require('mysql2/promise')"
+		],
+		"description": "Require Mysql2"
+	},
+	"Date-FNS": {
+		"prefix": "date-fns",
+		"body": [
+			"const {format} = require('date-fns')",
+			"const { es } = require('date-fns/locale');",
+			"const dateNow = new Date();",
+			"\n",
+			"const formatedDate = format(dateNow, \"d 'de' MMMM 'del' yyyy ' a las ' H:mm\",{ locale : es });",
+			"console.log(formatedDate);"
+		],
+		"description": "Require date-fns"
+	},
+	"Sharp": {
+		"prefix": "sharp",
+		"body": [
+			"const sharp = require('sharp');"
+		],
+		"description": "Require Sharp"
+	},
+	"FileSystem": {
+		"prefix": "fs",
+		"body": [
+			"const fs = require('fs').promises;"
+		],
+		"description": "Require FileSystem"
+	},
+	"FileSystem - Extra": {
+		"prefix": "fsextra",
+		"body": [
+			"const fsExtra = require('fs-extra');"
+		],
+		"description": "Require FS-Extra"
+	},
+	"Uuid": {
+		"prefix": "uuid",
+		"body": [
+			"const uuid = require('uuid');"
+		],
+		"description": "Require Uuid"
+	},
+	"OS": {
+		"prefix": "os",
+		"body": [
+			"const os = require('os');"
+		],
+		"description": "Require OS"
+	},
+	"JSON Web Token": {
+		"prefix": "jwt",
+		"body": [
+			"const jwt = require('jsonwebtoken');"
+		],
+		"description": "Require JSON Web Token"
+	},
+	"Body Parser": {
+		"prefix": "bodyparser",
+		"body": [
+			"const bodyParser = require('body-parser');"
+		],
+		"description": "Require Body Parser"
+	},
+	"Hapi Joi": {
+		"prefix": "hapijoi",
+		"body": [
+			"const Joi = require('@hapi/joi');"
+		],
+		"description": "Require Hapi/Joi"
+	},
+	"Joi Age Extended version": {
+		"prefix": "hapijoi",
+		"body": [
+			"const JoiAge = Joi.extend(require('joi-age'));"
+		],
+		"description": "Require Joi Age"
+	},
+	"Axios": {
+		"prefix": "axios",
+		"body": [
+			"const axios = require('axios').default;"
+		],
+		"description": "Require Axios"
+	},
+	"Router": {
+		"prefix": "router",
+		"body": [
+			"const routerx = require('express-promise-router');",
+			"const router = routerx();"
+		],
+		"description": "Require Router"
+	},
+	"Fileupload": {
+		"prefix": "fileupload",
+		"body": [
+			"const fileUpload = require('express-fileupload');"
+		],
+		"description": "Require Router"
+	},
+	///// APP to use , send, get 
+	"App.use 404": {
+		"prefix": "app404",
+		"body": [
+			"app.use((request, response) => {",
+			"  response.status(404).send('Page not found!');",
+			"});"
+		],
+		"description": "App 404"
+	},
+	"App.use Error Middleware": {
+		"prefix": "errormiddleware",
+		"body": [
+			"app.use((error, request, response, next) => {",
+			"  console.log(error);",
+			"  response.status(error.httpCode || 500).send(error.message);",
+			"});"
+		],
+		"description": "App Error Middleware"
+	},
+	//////////////// FUNCTIONS ////////////////////
+	"Async await function": {
+		"prefix": "async",
+		"body": [
+			"async function ${name}(${params}) => {",
+			"  ${arguments}",
+			"}"
+		],
+		"description": "Async await function"
+	},
+	"Async await function try": {
+		"prefix": "asynctry",
+		"body": [
+			"async function ${name}(params) => {",
+			"  try { ",
+			"    console.log();",
+			"  } catch (error) {",
+			"    console.log(error);",
+			"  }",
+			"}"
+		],
+		"description": "Async await function try"
+	},
+	"Async await try req res next": {
+		"prefix": "asyncreqresnext",
+		"body": [
+			"async function ${name}(request, response, next) => {",
+			"  try { ",
+			"    console.log();",
+			"  }",
+			"  catch (error) {",
+			"    console.log(error);",
+			"  }",
+			"}"
+		],
+		"description": "Async await try req res next"
+	},
+	"Try / Catch": {
+		"prefix": "trycatch",
+		"body": [
+			"  try { ",
+			"    ",
+			"  }",
+			"  catch (error) {",
+			"    console.log(error);",
+			"  }"
+		],
+		"description": "Try / Catch"
+	},
+}
